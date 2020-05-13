@@ -7,14 +7,22 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+    <section class="section">  
     <div class="clock">
         <h2 class="clock_text">00:00:00</h2>
     </div>
     <div class="myName"></div>
+    </section> 
 
     <div class="location">
         <span class="location_text"></span>
     </div>
+    <!--
+        1. 비동기 통신을 통해서 fetch.than(){}response 객체를 JSON화 시킨다.
+        MDN에서 API라도 꼭 기억하자!!!
+        2. '=>' : callback 함수
+    -->
 
     <script src="js/background.js"></script>
     <script src="js/clock.js"></script>
