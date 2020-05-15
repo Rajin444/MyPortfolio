@@ -1,4 +1,4 @@
-const nameContainer = document.querySelector(".myName");
+const nameContainer = document.querySelector(".js-name");
 
 function drowName(name){
     //innerhtml을 비워준다.
@@ -9,9 +9,10 @@ function drowName(name){
     nameContainer.appendChild(drowName);
 }
 
+// 콜백함수를 밖으로 빼서 관리하는 게 좋음
 function handleSubmit(event){
-//이벤트 하는 모든 부분을 번잡하지 않게 여기서 작성해줄 것
-// preventDefault() --> 새로고침을 막아줌(오지랖막아줌)
+//이벤트버블링 하는 모든 부분을 번잡하지 않게 여기서 작성해줄 것
+// preventDefault() --> 이벤트버블링의 외출금지화. 새로고침을 막아줌(오지랖막아줌)
    event.preventDefault();
    const form = event.target; 
    const input = form.querySelector("input");
@@ -25,14 +26,16 @@ function handleSubmit(event){
 function drowInput(){
     const input = document.createElement("input");
     input.type = "text";
+    //input친구 클래스 이름 들어가실께요~
     input.className = "input_name";
     input.placeholder = "Type your name here!";
 
     const form = document.createElement("form");
     
     form.addEventListener("submit",handleSubmit);
-    form.appendChild(input);
-    nameContainer.appendChild(form);
+    form.appendChild(input);  // form에 input이 붙음 
+    nameContainer.appendChild(form);  // div에 form이 붙음
+
 }
 
 function checkName(){

@@ -1,6 +1,6 @@
 const body = document.querySelector("body") ,
 // style을 넣어줄 변수
-locationText = document.querySelector(".location_text");
+locationText = document.querySelector(".js-location span");
 
 const API_KEY = "R7qHyr8iBlsBzXcpa1uEBHJ1Qdh6aQhKsroZL3DU-XE";
 
@@ -12,6 +12,7 @@ function saveBackGround(url,city,country,name){
     const savedImage = localStorage.getItem("background");
     if(savedImage !== null){
         localStorage.removeItem("background");
+        // 저장하기전에 기존에 있는걸 지우고 다시 저장하겠다 라는 의미.
     }
     const expireDate = new Date();
   
@@ -47,7 +48,9 @@ function getBackGround(){
 //   });
 
 fetch(IMAGEURL)
+// 비동기통신을 통해 불러온 문자열을 response라고하는거야... 
 .then(response => response.json())
+// response를 통해 불러온애를 json화 시켜주고
 .then(json=>{
     const image = json;
     if(image.urls && image.urls.full && image.location.city && image.location.country && image.location.name){

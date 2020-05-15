@@ -2,28 +2,51 @@
 <html lang="ko">
 <head>  
     <meta charset="UTF-8">
-    <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>13_May_2020_Study_JS</title>
-    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-
-    <section class="section">  
-    <div class="clock">
-        <h2 class="clock_text">00:00:00</h2>
+    <section class="section"> 
+      <!-- 시간 / 이름 -->    
+    <div class="js-clock clock">
+        <h2 class="clock__text">00:00:00</h2>
     </div>
-    <div class="myName"></div>
-    </section> 
 
-    <div class="location">
-        <span class="location_text"></span>
+    <div class="js-name name"></div>
+
+    <!-- to do List -->
+    <div>
+        <form class="js-to-do to-do">
+            <input class="js-add-to-do to-do" placeholder="할 일을 작성하세요!" type="text" />
+        </form>
+        <ul class="js-list list">
+        </ul>  
     </div>
+    
+    </section>
+   
+     <!-- 나라 -->
+    <div class="js-location location">
+        <span class="location__text"></span>
+    </div>
+
+    <!-- 날씨 / 기온 / 지역 -->
+    <div class="js-weather weather">
+        <span class="weather__text"></span>
+        <span class="sunrise__text"></span>
+    </div>
+    
     <!--
+        Date : 2020.05.16
         1. 비동기 통신을 통해서 fetch.than(){}response 객체를 JSON화 시킨다.
         MDN에서 API라도 꼭 기억하자!!!
         2. '=>' : callback 함수
     -->
-
+    
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
     <script src="js/background.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/hello.js"></script>
