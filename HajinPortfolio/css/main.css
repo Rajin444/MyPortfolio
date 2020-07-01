@@ -1,0 +1,118 @@
+@charset "UTF-8";
+body{
+    width: 100%;
+    margin:0 auto;
+    padding:0 auto;
+    font-family: Nanum;
+    background-color: #333333;
+}
+
+/* Header부분 */
+#header{position: relative;}
+#header #logo{display: inline-block; padding:1.5em; position: absolute;}
+#header #logo a{color:#d9d0c9; font-size: 17px; font-weight: 900;}
+#header #nav{overflow: hidden;}
+#header #nav ul{display: block; float: right; padding:1.5em;}
+#header #nav ul li{float: left; padding-right:15px;}
+#header #nav ul li a{color:#d9d0c9; font-size: 17px; transition: all 0.3s ease; ;}
+#header #nav ul li a:hover{color:#cc9966;}
+
+/* Main부분 */
+#banner{cursor: default; height: 90vh; min-height: 35em;overflow: hidden; position: relative; text-align: center;}
+#banner .inner{padding-top: 15vw;}
+#banner h2{
+            color:#d9d0c9;
+			transition: transform 0.5s ease, opacity 0.5s ease;
+			display: inline-block;
+			font-size: 3.75em;
+			opacity: 1;
+			padding: 0.25em 1em;
+			position: relative;
+            z-index: 1;
+            border-top:2.5px solid #d9d0c9;
+            border-bottom:2.5px solid #d9d0c9;
+}
+
+#banner p{
+            color:#d9d0c9;
+			letter-spacing: 0.225em;
+            text-transform: uppercase;
+            padding-top:0.75em;
+}
+
+#banner .more{ 
+            color:#cc9966;
+            border: none;
+			bottom: 1.5em;
+			font-size: 1.0em;
+			height: 8.5em;
+			left: 50%;
+			letter-spacing: 0.225em;
+			margin-left: -8.5em;
+			opacity: 1;
+			outline: 0;
+			padding-left: 0.225em;
+			position: absolute;
+			text-align: center;
+			text-transform: uppercase;
+			width: 16em;
+			z-index: 1;
+}
+
+#banner .more:after {
+    background-image: url("../img/arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 4em;
+    content: '';
+    display: block;
+    height: 1.5em;
+    left: 50%;
+    margin: 0 0 0 -0.75em;
+    position: absolute;
+    width: 1.5em;
+}
+
+/* ABOUT ME부분 */
+#about_me{position: relative; background-color:#d9d0c9; color:#d9d0c9;}
+#about_me .container{min-height: 35em; height:80vw;}
+#about_me .container .card{width:60vw; height:30vw; border-radius: 2em; background-color: #333333; margin-left: 20%;}
+#about_me .container h2{font-size: 2.45em; text-align: center; padding: 0.78em;}
+#about_me .container .photo{
+                    top:1em;
+                    padding:1em;
+                    display: inline-block;
+			        opacity: 1;
+			        padding: 0.25em 1em;
+			        position: relative;
+}
+#about_me .container .photo img{width:15vw; height:17vw; border-radius: 1em;border:0.55em solid #333333;}
+#about_me .container  h1{font-size: 2.35em; font-weight: 800; padding-left: 1em;}
+#about_me .container  span{display: block; font-size: 1.20em; padding-left: 1em;}
+
+/* SKILL부분 */
+#skill{overflow: hidden;}
+#skill .container{height:500px;}
+
+/* PROJECT부분 */
+#project{overflow: hidden;}
+#project .box{height:300px;}
+
+/* RESUME부분 */
+#resume{overflow: hidden;}
+#resume .container{height:300px;}
+
+/* CONTACT부분 */
+#contact{overflow: hidden;}
+#contact .container{height:300px;}
+
+/* Footer부분 */
+#footer{height:150px;  }
+#footer .footer{color:#d9d0c9; font-size: 15px; text-align: center;}
+#footer .footer strong{left: 40%;}
+
+
+
+
+

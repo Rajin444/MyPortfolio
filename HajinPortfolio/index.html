@@ -6,52 +6,133 @@
 <meta http-equiv="content-type" content="text/html" charset="UTF-8" />    
 <head>
 <title>HajinPortfolio</title>
-<link rel="stylesheet" href="css/style.css"> 
+<link rel="stylesheet" href="./css/style.css"> 
 <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script"
 	rel="stylesheet">   
 </head> 
 <body>
-
     <!-- header 시작 -->
 	<header id="header">
-		<div class="row">
-			<div class="header">
-				<ul>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">PROJECT</a></li>
-                    <li><a href="#">CONTACT</a></li>
-				</ul>
-			</div>
+		<h1 id="logo">
+			<a href="#index">HaJin's Web</a>
+		</h1>
+
+		<!-- nav 시작 -->
+		<div id="nav">
+			<ul>
+				<li><a href="#about_me">ABOUT ME</a></li>
+				<li><a href="#skill">SKILL</a></li>
+				<li><a href="#project">PROJECT</a></li>
+				<li><a href="#resume">RESUME</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
 		</div>
+		<!-- nav 끝 -->
 	</header>
 	<!-- header 끝 -->
-
+	
+	
+				
+	<section id="banner">
+		<div class="inner">
+			<h2>Hello Java</h2>
+			<p>LOREM IPSUMLOREM IPSUMLOREM IPSUM</p>
+		</div>
+		<a href="#about_me" class="more">More</a>
+	</section>
+	
+	
     <!-- content 시작 -->
-    <!-- About  -->
-	<section id="content1">
+    <!-- About me -->
+	<section id="about_me">
 		<div class="row">
-			<div class="con_box1">
-                <h2>ABOUT</h2>
+                <div class="container">
+					<h2>ABOUT ME</h2>
+					<div class="card">
+					<span class="photo"><img src="./img/hajin.jpg"></span>
+					<h1>HAJIN</h1><span>@이하진</span>
+					<div class="inner">
+						<p>저는 디자인학과 전공의 신입 Back-end 이하진입니다.<br>
+						</p>
+					</div>
+					</div>
+				</div>
+		</div>
+	 </section>
+	 
+	 <!-- skill  -->
+	<section id="skill">
+		<div class="row">
+		    <div class="container">
+				
 			</div>
 		</div>
      </section>
      
       <!-- PROJECT  -->
-	<section id="content2">
+	<section id="project">
 		<div class="row">
-			<div class="con_box2">
-                <h2>PROJECT</h2>
-			</div>
+				 <!-- PROJECT img1  -->
+				<article id="first" class="container box">
+					<a href="#" class="image"><img src=""></a>
+					<div class="inner">
+						<h2>PROJECT</h2>
+						<p>LOREM IPSUM</p>
+					</div>
+				</article>
+
+				<!-- PROJECT img2  -->
+				<article class="container box">
+					<a href="#" class="image"><img src=""></a>
+					<div class="inner">
+						<h2>PROJECT</h2>
+						<p>LOREM IPSUM</p>
+					</div>
+				</article>
+
+				<!-- PROJECT img3  -->
+				<article class="container box">
+					<a href="#" class="image"><img src=""></a>
+					<div class="inner">
+						<h2>PROJECT</h2>
+						<p>LOREM IPSUM</p>
+					</div>
+				</article>
+
+				<!-- PROJECT img4  -->
+				<article class="container box">
+					<a href="#" class="image"><img src=""></a>
+					<div class="inner">
+						<h2>PROJECT</h2>
+						<p>LOREM IPSUM</p>
+					</div>
+				</article>
 		</div>
+	 </section>
+	 
+	 <!-- RESUME  -->
+	<section id="resume">
+		<div class="row">
+                <div class="container box">
+					<h2>RESUME</h2>
+					<div class="inner">
+						<button type="submit">이력서 보러가기</button>
+					</div>
+				</div>
+			</div>
      </section>
      
       <!-- CONTACT  -->
-	<section id="content3">
+	<section id="contact">
 		<div class="row">
-			<div class="con_box3">
-                <h2>CONTACT</h2>
+				<div class="container">
+					<h2>포트폴리오가 마음에 드신다면 </h2>
+					<div class="contact_inner">
+						<a target="_blank" href="#" class="contact_mail">hajin0335@naver.com</a>
+						<p>메일보내주시면, 평일 기준 2~3일 내로 회신드리겠습니다.</p>
+					</div>	
+				</div>
 			</div>
-		</div>
 	 </section>
 	<!-- content 끝 -->
 
@@ -59,7 +140,11 @@
 	<footer id="footer">
 		<div class="row">
 			<div class="footer">
-				 <p>Copyright © <strong>2020 by Hajin Lee. Portfolio with GitHub.com</strong> All Rights Reserved.</p>
+				<ul class="icons">
+					<li><a href="#" class="icon blog"><span class="label">Blog</span></a></li>
+					<li><a href="#" class="icon github"><span class="label">GitHub</span></a></li>
+				</ul>
+				<strong>Copyright © 2020 by Hajin Lee.</strong> 
 			</div>
 		</div>
 	</footer>
