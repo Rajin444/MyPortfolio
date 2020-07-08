@@ -229,10 +229,13 @@ body{
 }
 
 /* Footer부분 */
-#footer{height:150px;}
-#footer .footer{color:#d9d0c9; font-size: 15px;}
-#footer .footer strong{left: 40%;}
-
+#footer{border-top: 1px solid #d9d0c9;}
+#footer .footer{height:150px;}
+#footer .footer .bot{padding: 0.89em 0 1.89em 0;}
+#footer .footer .bot .site{display: inline-block;}
+#footer .footer .bot .site li{float: left; padding: 0 2.3em;}
+#footer .footer .bot .site li a{color:#d9d0c9; font-size: 17px; font-weight: 600;}
+#footer .footer .bot strong{color:#d9d0c9; font-size: 15px;}
 
 
 
