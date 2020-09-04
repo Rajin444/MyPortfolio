@@ -15,8 +15,8 @@ body{
     line-height: 1.8;
     font-size: 20px;
     font-family: Nanum;
-    background-color: #333333;
-    color:#d9d0c9;
+    background-color: #eeeeee20;
+    color:#4d2c37;
 }
 
 .row{
@@ -33,9 +33,17 @@ body{
 
 .box{margin: 0 3.85em;}
 
-.inner{
-    position: relative;
+.right{float: right; text-align: right;}
+.left{float: left; text-align: left;}
+
+.title{
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 5px;
+    padding-bottom: 1.5em;
 }
+
+/* --------------------------------------------------------- */
 
 /* Header부분 */
 #header{
@@ -53,21 +61,13 @@ body{
       padding: 2em 0; } 
 }
 
-#header .logo{float: left; margin-left:7.85em; margin-top:3em;}
-#header .logo .hj-logo{
-    font-size: 35px;
-    text-transform: uppercase; 
-    color:#d9d0c9; 
-    font-size: 17px; 
-    font-weight: 900;
-    letter-spacing: 5px;
-    padding:0.68em;
-    border:1px solid #d9d0c9;
-}
+/* --------------------------------------------------------- */
+
+/* nav부분 */
 #header #nav{overflow: hidden;}
-#header #nav ul{display: block; float: right; padding:1.5em; margin-right: 2.53em;}
-#header #nav ul li{float: left; padding-right:15px;}
-#header #nav ul li a{color:#d9d0c9; font-size: 17px; transition: all 0.3s ease; ;}
+#header #nav ul{display: block; float: right; padding:1em; margin-right: 2.53em;}
+#header #nav ul li{float: left; padding-right:25px;}
+#header #nav ul li a{color:#4d2c37; font-size: 17px; transition: all 0.3s ease; ;}
 #header #nav ul li a:hover{color:#cc9966;}
 
 @media (max-width: 480px){
@@ -79,65 +79,54 @@ body{
     #header #nav ul li a{font-size:10px;}
 }
 
-/* Main부분 */
-#banner{cursor: default; min-height: 42em; position: relative; padding-bottom:4.85em;}
-#banner .ban{padding-top: 15vw;}
+/* --------------------------------------------------------- */
 
-#banner h2{
-            color:#d9d0c9;
-			transition: transform 0.5s ease, opacity 0.5s ease;
-			display: inline-block;
-			font-size: 3.75em;
-			opacity: 1;
-			padding: 0.25em 1em;
-			position: relative;
-            z-index: 1;
-            border-top:2.5px solid #d9d0c9;
-            border-bottom:2.5px solid #d9d0c9;
+/* Main부분(section) */
+#banner{    
+    overflow: hidden;
+    clear: both;
+    display: inline;
 }
-
-#banner p{
-            color:#d9d0c9;
-            font-size: 1.75em;
-			letter-spacing: 0.225em;
-            text-transform: uppercase;
-            padding-top:0.98em;
-            padding-bottom:1.79em;
+#banner h2{
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+#banner .name{
+    height: 8em;
+    transform: rotate(90deg);
+    /*border:1px solid red;*/
+}
+#banner .main{
+    width:280px;
+    height:420px;
+    left:40%;
+    position: relative;
+}
+#banner .main h1{
+    font-size: 2.6em;
+    font-weight: 800;
+    letter-spacing: 7px;
+}
+#banner .main img{
+    width: 100%;
+    height: 100%;
+    border: 15px solid #4d2c37;
 }
 
 @media (max-width: 480px){
-	#banner .inner{padding-top:10em;}
-    #banner h2{font-size:1.75em;}
-    #banner p{font-size:0.55em; padding-top:0.75em;}
+	
 }
 
-/* ABOUT ME부분 */
+/* --------------------------------------------------------- */
+
+/* ABOUT ME 부분 */
 #about_me{
     padding: 7em 0;
 	clear: both;
-    background-color:#d9d0c9; 
-    color:#333333;
+    color:#4d2c37;
 }
 
-#about_me .let{display: inline-block;}
-#about_me .let ul{float:left; border:1px solid greenyellow;}
-#about_me .let ul li{ position: relative;}
-
-#about_me .let ul li .photo{
-                    height:20vw;
-                    top:1em;
-                    padding:1em;
-                    display: block;
-			        opacity: 1;
-                    padding: 0.25em 1em;
-                }
-
-#about_me .let ul li .photo img{width:15vw; height:17.5vw; border:0.45em solid #333333;}
-#about_me .let ul li .name{display: block; margin-top: -2vw;}
-#about_me .let ul li .name h1{font-size: 2em; font-weight: 500; padding-left: 1.5em;float: left;}
-#about_me .let ul li .name p{font-size: 1.2em; padding-top: 1em; padding-left: 0.75;float: left;}
-#about_me .let .tnt{float: left; padding-left: 0.75em;}
-#about_me .let .tnt p{font-size: 0.98em; font-weight:500; text-align: left;}
 
 @media (max-width: 480px){
     #about_me .photo img{width:35vw; height:37vw; border:0.45em solid #333333;}
@@ -146,19 +135,22 @@ body{
     #about_me .inner p{font-size: 0.87em; font-weight:500;}
 }
 
+/* --------------------------------------------------------- */
+
 /* SKILL부분 */
 #skill{
     padding: 7em 0;
     clear: both;
 }
 
-#skill .box ul{ display: inline-block; border:1px solid red;}
+#skill .box ul{ display: inline-block;}
 
 #skill .box ul li{float: left; padding:2.5em;  letter-spacing: 3px;}
 .icon{width:5.5vw; height:5.5vw;}
 
 #skill .box ul li .txt{display: inline-block;}
 
+/* --------------------------------------------------------- */
 
 /* PROJECT부분 */
 #project{
@@ -167,6 +159,8 @@ body{
     color: #333333;
     background-color: #d9d0c9;
 }
+
+/* --------------------------------------------------------- */
 
 /* 해당class 공통부분 */
 .intro{margin-bottom: 3em;}
@@ -186,39 +180,16 @@ body{
 	}
 }
 
-/* RESUME부분 */
-#resume{
-    padding: 7em 0;
-    clear: both;
-}
-
-#resume .btn{
-    margin-left: 34em;
-    font-size: 22px;
-    font-weight: 500;
-    padding: 0.45em 1.5em;
-    border-radius: 5px;
-    color:#333333;
-    background-color: #cc9966;
-}
-
-#resume .btn:hover{
-    color: #cc9966;
-    border: 2px solid #cc9966;
-    background-color: #333333;
-}
-
+/* --------------------------------------------------------- */
 
 /* CONTACT부분 */
 #contact{
     padding: 7em 0;
     clear: both;
-    color: #d9d0c9;;
 }
-
 #contact .contact_inner{position: relative;}
 #contact .contact_inner h3{font-size: 0.98em; font-weight: 600;}
-#contact .contact_inner .contact_mail{font-size: 2.73em; font-weight: 800;color:#d9d0c9;}
+#contact .contact_inner .contact_mail{font-size: 2.73em; font-weight: 800;color:#4d2c37;}
 #contact .contact_inner .contact_mail:hover{color:#cc9966;}
 #contact .contact_inner p{font-size: 0.78em;}
 
@@ -228,14 +199,16 @@ body{
     #contact .container .contact_inner p{font-size: 0.52em;}
 }
 
+/* --------------------------------------------------------- */
+
 /* Footer부분 */
-#footer{border-top: 1px solid #d9d0c9;}
+#footer{border-top: 1px solid #4d2c37;}
 #footer .footer{height:150px;}
-#footer .footer .bot{padding: 0.89em 0 1.89em 0;}
+#footer .footer .bot{padding: 0.5em 0 0.5em 0;}
 #footer .footer .bot .site{display: inline-block;}
-#footer .footer .bot .site li{float: left; padding: 0 2.3em;}
-#footer .footer .bot .site li a{color:#d9d0c9; font-size: 17px; font-weight: 600;}
-#footer .footer .bot strong{color:#d9d0c9; font-size: 15px;}
+#footer .footer .bot .site li{float: left; padding: 0 1.3em;}
+#footer .footer .bot .site li a{color:#4d2c37; font-size: 17px; font-weight: 600;}
+#footer .footer .bot strong{color:#4d2c37; font-size: 15px;}
 
 
 

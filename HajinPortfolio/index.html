@@ -13,65 +13,58 @@
 <body>
     <!-- header 시작 -->
 	<header id="header">
-		<h1 class="logo">
-			<a href="#index" class="hj-logo">HaJin's Web</a>
-		</h1>
 
 		<!-- nav 시작 -->
 		<div id="nav">
 			<ul>
+				<li><a href="#index">HOME</a></li>
 				<li><a href="#about_me">ABOUT ME</a></li>
 				<li><a href="#skill">SKILL</a></li>
 				<li><a href="#project">PROJECT</a></li>
-				<li><a href="#resume">RESUME</a></li>
 				<li><a href="#contact">CONTACT</a></li>
 			</ul>
 		</div>
+
 		<!-- nav 끝 -->
 	</header>
 	<!-- header 끝 -->
 	
-	
-				
+	<!-- section 시작 -->
 	<section id="banner">
 		<div class="row txtcenter">
-		<div class="inner ban">
-			<h2>Hello Java</h2>
-			<p>LOREM IPSUMLOREM IPSUMLOREM IPSUM</p>
+			<div class="container">	
+		 		<div class="box">
+					<h2 class="name left">LEE HAJIN</h2>
+					<div class="main">
+						<h1 class="left">PORT-</h1>
+							<img src="./img/hajin_bk.jpg" alt="img" />
+						<h1 class="right">FOLIO</h1>
+					</div>
+					<h2 class="right">HELLO, <br>
+						I AM A BACK-END Developer. 
+					</h2>
+		 		</div>
+			</div>	
 		</div>
-	</div>
 	</section>
+	<!-- section 끝 -->
 	
 	
     <!-- content 시작 -->
     <!-- About me -->
 	<section id="about_me">
 		<div class="row txtcenter">
-			<div class="intro">
-				<h2 class="intro-title">ABOUT ME</h2>
-			</div>
-		</div>
-		<div class="row txtcenter">
                 <div class="container">
-					<div class="box let">
-					<ul>
-						<li>
-							<span class="photo">
-								<img src="./img/hajin.jpg" alt="프로필">
-							</span>
-						</li>
-						<li>
-							<div class="name">
-								<h1>HAJIN</h1>
-								<p>@이하진</p>
-							</div>	
-						</li>
-					</ul>
-					
-					<div class="inner tnt">
-						<p>"안녕하세요<br>
-							Back-end 신입 개발자 이하진입니다."</p>
-					</div>
+					<div class="box">
+						<div class="left"> 			
+							<h2>"안녕하세요, 저는 끊임없이 노력하는 이하진입니다."</h2>
+							<p>새로운 기술에 관심이 많으며, 동료들과 커뮤니케이션과 상호 피드백 및 리뷰를 좋아합니다.</p>
+						</div>
+						<div class="right">
+							<h2>Overall Experiences</h2>
+							<span>Java수업과정 수료 / KH정보교육원</span><br>
+							<span>2019.12.19 ~ 2020.00.00</span>
+						</div>
 				</div>
 			</div>	
 		</div>
@@ -80,13 +73,9 @@
 	 <!-- skill  -->
 	<section id="skill">
 		<div class="row txtcenter">
-			<div class="intro">
-				<h2 class="intro-title">WHAT I DO</h2>
-			</div>
-		</div>
-		<div class="row txtcenter">
 		    <div class="container">
-				<div class="box">  
+				<div class="box">
+					<h2 class="title">WHAT I DO</h2>  
 				<ul>
 					<li>
 						<span class="icon-box"><img class="icon" src="./img/skill/java.png" alt="java"></span>
@@ -157,11 +146,9 @@
       <!-- PROJECT  -->
 	<section id="project">
 		<div class="row txtcenter">
-			<div class="intro">
-				<h2 class="intro-title">PROJECT</h2>
-			</div>
-		</div>
-		<div class="row txtcenter">
+			<div class="container">
+				<div class="box">
+					<h2 class="title">PROJECT</h2>
 				 <!-- PROJECT img1  -->
 				<div class="animate-box">
 					<a href="project.html" class="pro-image" style="background-image: url(/img/project/project1.png);" >
@@ -210,41 +197,25 @@
 								<p class="tag"><span>Illustration</span>, <span>Logo</span></p>
 								<h3>Project 04</h3>
 								<span class="read-more">Read more <i class="icon-arrow-right3"></i></span>
-						</div>
-					</a>
-				</div>
-		</div>
-	 </section>
-	 
-	 <!-- RESUME  -->
-	<section id="resume">
-		<div class="row txtcenter">
-			<div class="intro">
-				<h2 class="intro-title">RESUME</h2>
-			</div>
-		</div>
-		<div class="row">
-                <div class="container box">
-					<div class="inner">
-						<button class="btn" type="submit" onclick="click">이력서 보러가기</button>
+							</div>
+						</a>
 					</div>
 				</div>
-			</div>
-     </section>
+			</div>	
+		</div>
+	 </section>
      
       <!-- CONTACT  -->
 	<section id="contact">
 		<div class="row txtcenter">
-			<div class="intro">
-				<h2 class="intro-title">CONTACT</h2>
-			</div>
-		</div>
-		<div class="row txtcenter">
 				<div class="container">
-					<div class="contact_inner">
-						<h3>포트폴리오가 마음에 드신다면</h3>
-						<a target="_blank" href="#" class="contact_mail">hajin0335@naver.com</a>
-						<p>메일보내주시면, 평일 기준 2~3일 내로 회신드리겠습니다.</p>
+					<div class="box">
+						<h2 class="title">CONTACT</h2>
+						<div class="contact_inner">
+							<h3>포트폴리오가 마음에 드신다면</h3>
+							<a target="_blank" href="#" class="contact_mail">hajin0335@naver.com</a>
+							<p>메일보내주시면, 평일 기준 2~3일 내로 회신드리겠습니다.</p>
+						</div>
 					</div>	
 				</div>
 			</div>
