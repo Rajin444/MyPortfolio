@@ -154,11 +154,32 @@ body{
 
 /* PROJECT부분 */
 #project{
+    overflow: hidden;
     padding: 7em 0;
     clear: both;
     color: #333333;
     background-color: #d9d0c9;
 }
+#project .pro{
+    border:1px solid blue; 
+    overflow: hidden;
+    
+}
+.animate-box{
+    border: 1px solid red; 
+    width: 250px; 
+    height: 250px;
+    margin: 1.5em;
+}
+.animate-box .pro-image{
+    
+}
+.icon img{
+    width:150px;
+    height:150px;
+}
+
+
 
 /* --------------------------------------------------------- */
 
