@@ -42,7 +42,13 @@ body{
     letter-spacing: 5px;
     padding-bottom: 1.5em;
 }
-
+.icon-box{
+    padding-left: 2.5em;
+}
+.icon{
+    width:125px;
+    height:125px;
+}
 /* --------------------------------------------------------- */
 
 /* Header부분 */
@@ -146,7 +152,6 @@ body{
 #skill .box ul{ display: inline-block;}
 
 #skill .box ul li{float: left; padding:2.5em;  letter-spacing: 3px;}
-.icon{width:5.5vw; height:5.5vw;}
 
 #skill .box ul li .txt{display: inline-block;}
 
@@ -171,13 +176,8 @@ body{
     height: 250px;
     margin: 1.5em;
 }
-.animate-box .pro-image{
-    
-}
-.icon img{
-    width:150px;
-    height:150px;
-}
+
+
 
 
 
