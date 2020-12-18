@@ -29,7 +29,7 @@ body{
     text-align: center;
 }
 
-.container{width: 100%; height: 100%;}
+.container{width: 100%;}
 
 .box{margin: 0 3.85em;}
 
@@ -37,36 +37,44 @@ body{
 .left{float: left; text-align: left;}
 
 .title{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 600;
     letter-spacing: 5px;
-    padding-bottom: 1.5em;
+    padding-bottom: 0.5em;
 }
-.hide{overflow: hidden;}
-.icon-box{
-    padding-left: 2.5em;
-}
-.icon{
-    width:125px;
-    height:125px;
-}
+.hide{display: none;}
+.more{float:right; font-size:12px;}
+
 /* --------------------------------------------------------- */
 /* header부분 */
-#header{border: 1px solid red; overflow:hidden;}
-.logo{font-size:2em;}
-.menu{border:1px solid blue; padding:5px;}
-.menu ul li{float: left; margin-right:25px;}
+#header{overflow:hidden;}
+.logo{font-size:2.5em; font-weight: 600; float:left; margin:10px;}
+.menu{display: inline; margin:15px;}
+.menu ul li{float: left; margin-left:30px;}
 
 /* --------------------------------------------------------- */
 
 /* Section부분 */
+#contents{overflow: hidden;}
+.visual{height:450px; padding:10px; background-color: #9ccbf820;}
+
+.skills{height:350px; padding:10px;}
+.skills .tit_font{font-size:16px; font-weight: 500; padding-bottom:1em;}
+.skills ul{display: inline;}
+.skills ul li{float:left; margin:1em 3.2em 0 0;}
+
+.project{height:320px; padding:10px; margin-top:15px;}
+.project ul{display:inline;}
+.project ul li{float:left; margin:1em 3.2em 0 0;}
 /* --------------------------------------------------------- */
 
 /* Footer부분 */
-#footer{border-top: 1px solid #4d2c37;}
-.footer{height:150px;}
-
-
+#footer{border-top: 1px solid #4d2c37; margin-top:1.5em;}
+.footer{height:150px; margin-top:1em;}
+.footer .port{display: inline;}
+.footer .port span{font-size: 2.3em; font-weight: 600; float:left; margin-right: 1.4em;} 
+.footer .policy, .footer .sns, .footer .info{font-size:15px;}
+/* --------------------------------------------------------- */
 
 
 

@@ -12,30 +12,35 @@
 <body>
     <!-- header 시작 -->
 	<header id="header">
-        <div>
-            <h1 class="logo"><a href="/index">Rajin</a></h1>
+        <div class="container box">
+            <h1 class="logo"><a href="index.html">Rajin</a></h1>
             <nav id="nav" class="menu">
                 <ul>
-                    <li><a href="/about">Intro</a></li>
-                    <li><a href="/project">Project</a></li>
-                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="view/about.html">Intro</a></li>
+                    <li><a href="view/project.html">Project</a></li>
+                    <li><a href="https://blog.naver.com/hajin0335">Blog</a></li>
                     <li><a href="https://github.com/Rajin444" target="_blank">GitHub</a></li>
                 </ul>
         </nav>
             
             <div id="overlay" class="overlay"></div>
         </div>
+        <!-- nav 끝 -->
     </header>
+     <!-- header 끝 -->
 
     <!-- main 시작 -->
-    <main id="contents" class="index">
+    <main id="contents" class="index container">
+        <div class="box">
         <h2 class="hide">main</h2>
         <section class="visual">
             <div>
                 <div class="slide">
                     <p>안녕하세요.</p>
                     <p>Back-End 개발자 이하진입니다.</p>
-                    <p class="text-effect"></p>
+                    <p class="text-effect">
+
+                    </p>
                 </div>
             </div>
             
@@ -44,61 +49,78 @@
         <h2 class="hide">skills</h2>
         <section class="skills">
             <h2 class="title">Skills</h2>
-            <p>웹 개발 파트별로 정리한 간략한 기술스텍입니다.<br>
+            <p class="tit_font">웹 개발 파트별로 정리한 간략한 기술스텍입니다.<br>
             각 분야별 기술에 대한 자세한 내용은 "Intro" 페이지에서 확인하실 수 있습니다.
             </p>
             <ul>
                 <li>
                     <div>
-                        <img src="">
+                        <span><img src="img/icon/frontend.png" style="width:80px;height:80px;"></span>
                         <h3>Front-End</h3>
                     </div>
                     <p>HTML·CSS·JQuery 웹 퍼블리싱</p>
                 </li>
                  <li>
                     <div>
-                        <img src="">
+                        <span><img src="img/icon/backend.png" style="width:80px;height:80px;"></span>
                         <h3>Back-End</h3>
                     </div>
                     <p>Java·Javascript·SpringFramework <br>Oracle DB</p>
                 </li>
                  <li>
                     <div>
-                        <img src="">
+                        <span><img src="img/icon/devlopment.png" style="width:80px;height:80px;"></span>
                         <h3>Devops</h3>
                     </div>
-                    <p>Git·Troll·Stack</p>
+                    <p>GitHub·Troll·Stack</p>
                 </li>
             </ul>
         </section>
         
         <h2 class="hide">Project</h2>
         <section class="project">
+            <h2 class="title">project</h2>
             <div>
                 <ul>
                     <li>
-                        <a href="/project.html">
-                            <h3>Team Project</h3>
-                            <p>학원에서 진행한 파이널 프로젝트입니다.</p>
-                            <div class="more">상세보기</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/project.html">
-                            <h3>Solo Project</h3>
-                            <p>개인적으로 혼자 진행한 프로젝트입니다.</p>
-                            <div class="more">상세보기</div>
-                        </a>
-                    </li>    
-                </ul>
-            </div>
-        </section>
+                        <div class="animate-box">
+                            <a href="view/project.html" target="_blank" class="pro-image">
+                                <div class="overlay"></div>
+                                    <div class="desc">
+                                        <span class="icon"><i class="icon-heart-outline"></i></span>
+                                        <p class="tag">
+                                        <span><img src="img/icon/teamproject.png" style="width:70px;height:70px;"></span><br/>
+                                        <span>Team Project</span></p>
+                                        <p>학원에서 진행한 파이널 프로젝트입니다.</p>
+                                        <span class="more">상세보기</span>
+                                    </div>
+                             </a>
+                        </div>
+                     </li>
+                        <li>
+                            <div class="animate-box">
+                                <a href="view/project.html" target="_blank" class="pro-image" style="background-image: url(img/icon/project.png);" >
+                                    <div class="overlay"></div>
+                                        <div class="desc">
+                                            <p class="tag">
+                                            <span><img src="img/icon/project.png" style="width:70px;height:70px;"></span><br/>
+                                            <span>Solo Project</span></p>
+                                            <p>개인적으로 혼자 진행한 프로젝트입니다.</p>
+                                            <span class="more">상세보기</span>
+                                        </div>
+                                 </a>
+                            </div>
+                        </li>    
+                     </ul>
+                </div>
+            </section>
+        </div>
     </main>
     <!-- main 끝 -->
 	
 	<!-- footer 시작 -->
 	<footer id="footer">
-		<div class="row txtcenter">
+		<div class="row box">
 			<div class="footer">
 				<div class="port">
                     <span>Rajin</span>
@@ -106,19 +128,14 @@
                 <div class="policy">
                     <a href="/policy">개인정보 처리방침</a>
                 </div>
-                <div class="sns">
-                    <a href="" title="email"></a>
-                    <a href="" title="kakaoTalk"></a>
-                    <a href="" title="gitHub"></a>
-                </div>
-                
 				<div class="info">
-					<span><strong>Lee_Hajin</strong></span>
-                    <span>hajin0533@gmail.com</span>
-                    <span>카카오톡|@rajin</span>
-                    <span>GitHub|@Rajin444</span>
+					<span>made in | <strong>Lee_Hajin</strong></span><br />
+                    <span><a href="" title="email">이메일 | hajin0533@gmail.com</a></span>
+                    <span> <a href="" title="kakaoTalk">카카오톡 | @rajin</a></span>
+                    <span><a href="https://github.com/Rajin444" title="gitHub">GitHub | @Rajin444</a></span>
                     <div>Copyright © 2020 by Hajin Lee All Right Reserved</div>
-				</div>
+                </div>
+            </div>
 			</div>
 		</div>
 	</footer>
