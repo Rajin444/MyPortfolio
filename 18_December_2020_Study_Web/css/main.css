@@ -1,0 +1,43 @@
+@charset "UTP-8";
+
+@font-face {
+	font-family: 'NanumGothic';
+	src: url('fonts/NanumGothicRegular.eot');
+	src: url('fonts/NanumGothicRegular.eot?#iefix')
+		format(‘embedded-opentype’), url('fonts/NanumGothicRegular.woff')
+		format(‘woff’), url('fonts/NanumGothicRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+    letter-spacing: 1px;
+    line-height: 1.8;
+    font-size: 20px;
+    font-family: Nanum;
+}
+
+/* header부분 */
+#header{overflow: hidden;}
+.top{display: inline; float:right;}
+.top a{font-size: 12px;}
+.logo{text-align: center;}
+.logo img{width:250px; height:120px;}
+.menu{padding:1.5em; margin-left:10em;}
+.menu ul{display: inline;}
+.menu ul li{float: left;}
+.menu ul li a {font-size:27px; font-weight: 600; margin:0 1.5em;}
+
+/* section부분 */
+#wrap{overflow: hidden;}
+#main{height:550px;}
+#contents{height:300px;}
+.cnts{border:1px solid green;}
+
+/* footer부분 */
+#footer{overflow: hidden; background-color: #e61111; color:#fff;}
+.footerInner{padding:16px; margin-left: 5em;}
+.footerInner a{font-size: 14px; font-weight: 600; color:#fff;}
+.footerInner p, .footerInner address{
+    font-size: 12px;
+}

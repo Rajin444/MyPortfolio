@@ -1,0 +1,6 @@
+@charset "UTP-8";
+
+@import "reset.css";
+
+/* 메인 */
+@import "main.css"
