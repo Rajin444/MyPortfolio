@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/***************** basic *****************/
+html, body {width: 100%; height: 100%;}
+body {color:#111; font-size: 16px; background-color: #fff;}
+.wrapper {width: 100%; min-height: 100%;}
+
+/**************** header ****************/
+.header {width:100%; height:70px;}
+.head_top .head_logo a {display: inline-block; font-size: 32px; color:#111; padding: 10px;}
+.head_logo a img {width:25%;}
+.top_menu {position: absolute; top: 10%; right: 1%;}
+.top_menu > li {display: inline-block; padding: 0 7px;}
+.top_menu > li > a {font-size: 11px; color: #111;}
+.top_menu > li > a:hover, .top_menu > li > a:focus {border-bottom: 1px solid #111;}
+
+.container {display: block; position: relative; width: 1280px; margin: 0 auto;}
+
+.gnb {display: flex; position: relative; width:34.7%; margin: 0 auto;}
+.gnb_header {display: inline-block;}
+.gnb_header > li {float: left; padding: 15px 25px;}
+.gnb_header > li > a {font-size: 18px; font-weight: 700; color:#111;}
+.gnb_header > li > a:focus, .gnb_header > li > a:hover {color: #6c8a9b} 
+
+/************* conttent ****************/
+.content {overflow: hidden; text-align: center;}
+.main {position: relative; width: 100%; height:450px; margin-bottom:1.5em; background-color: #eee;}
+.sub {display: inline-block; height: 300px;}
+
+.sub_box {display:inline-block; width:22%; height:320px; margin: 1em;}
+
+/************* footer ****************/
+.footer {width:100%; height: 150px; color:#fff; background-color: #111;}
+.fnb {display: inline-block;}
+.foot_logo {display: block; position: relative; padding: 10px;}
+.foot_logo img {width: 60px;}
+.fnb_menu {display: inline-block;}
+.fnb_menu > li {float: left; padding: 20px 10px;}
+.fnb_menu > li > a {font-size: 14px; color: #fff;}
+.fnb_menu > li::after {content: ''; position: absolute; top: 24px; left: 6%; width: 1px; height: 14px; background-color: #ccc;}
+
+/************* media query ****************/
+
+@media (max-width:1240px){
+    .wrapper {width: 100%;}
+    .header {width:100%;}
+    .container {width:1240px;}
+    .footer {width:100%;}
+}
+
+@media (max-width:768px){
+    .container {width:768px;}
+    .content .sub {width:48%; margin: 0.85em 0 0 0.85em;}
+    .content .sub:last-child {display: none;}
+    .content .subImg {width:47%; margin: 0.85em 0 0 0.85em;}
+    .footer {height:200px;}
+}
+@media (max-width:480px){
+    .container {width:480px;}
+    .content .main {height:350px;}
+    .content .sub {width:80%; height: 250px; margin: 1em;}
+    .content .sub:last-child {display: none;}
+    .content .subImg {width:38%; height:130px; margin: 0.85em 0 0 0.85em;}
+}
