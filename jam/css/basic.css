@@ -49,9 +49,9 @@ caption {position: static; overflow: hidden; width: 1px; height: 1px; margin: 0;
 .sub_each {margin-bottom: 60px;}
 /* .sub_each:last-of-type {margin-bottom: 0;} */
 .sub_each2 {margin-bottom: 40px;}
-.sub_each2:last-of-type {margin-bottom: 0;}
+/* .sub_each2:last-of-type {margin-bottom: 0;} */
 .sub_each3 {margin-bottom: 20px;}
-.sub_each3:last-of-type {margin-bottom: 0;}
+/* .sub_each3:last-of-type {margin-bottom: 0;} */
 /* .sub_each > *:last-child {margin-bottom: 0;} */
 .sub_tit {font-size:28px; font-weight: 700;}
 .sub_txt {font-size:16px;}
