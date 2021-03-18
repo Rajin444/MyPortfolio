@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/************* media query ****************/
+@media (max-width:1240px){
+    .wrapper {width: 100%;}
+    .header {width:100%;}
+    .container {width:1240px;}
+    .footer {width:100%;}
+}
+@media (max-width:991px){
+
+}
+@media (max-width:768px){
+    .container {width:768px;}
+    .content .sub {width:48%; margin: 0.85em 0 0 0.85em;}
+    .content .sub:last-child {display: none;}
+    .content .subImg {width:47%; margin: 0.85em 0 0 0.85em;}
+    .footer {height:200px;}
+}
+@media (max-width:640px){
+
+}
+@media (max-width:480px){
+    .container {width:480px;}
+    .content .main {height:350px;}
+    .content .sub {width:80%; height: 250px; margin: 1em;}
+    .content .sub:last-child {display: none;}
+    .content .subImg {width:38%; height:130px; margin: 0.85em 0 0 0.85em;}
+}

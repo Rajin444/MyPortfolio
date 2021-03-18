@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/************ main ***********/
+
+/* mv */
+.mv {display: inline-block; width: 100%; padding: 30px 0;}
+.mv iframe {display: inline-block;}
+
+/* msCard */
+.board_write .msCard {overflow: hidden; position: relative; width:47%; height: 580px; box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.5); border-radius: 6px; margin: 0 auto; padding-top: 20px;}
+.msCard .msImg {display: inline-block; width:90%; height:450px; opacity: 0.9; background: url('../images/main/echg.PNG') center no-repeat;}
+.msCard .msImg::after {content: ''; z-index: 1; width: 82.5%; height: 100px; position: absolute; top: 370px; right: 55px; background: linear-gradient(rgba(9,2,4,0),#2e2a2a);}
+
+/* msWave */
+.msWave {position: absolute; width: 700px; height: 700px; margin-top: -32%; opacity: 0.1; left: -10%; top: 0; background: radial-gradient(#47517e, #303466);}
+.msWave:nth-child(2), .msWave:nth-child(3) {top: 10px;} 
+
+.playing .msWave {border-radius: 43%; animation: wave 3000ms infinite linear;}
+
+.msInfo {display: inline-block;}
+.msInfo .ms_tit {font-size: 20px; font-weight: 700; padding: 10px 0;}
+.msInfo .ms_art {font-size: 16px;}
+
+@keyframes wave {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+/* stop */
+
+/* play_btn */
+.fa {position: absolute; cursor: pointer; color: #111;}
+.fa-play {display: none;}
+
+/* sub_box */
+.subImg {display: inline-block; width: 100%; height: 100%;} 
+#img1 {background: url('../images/main/sub_box/img1.jpg') center; background-size: cover;}
+#img2 {background: url('../images/main/sub_box/img2.jpg') center; background-size: cover;}
+#img3 {background: url('../images/main/sub_box/img3.jpg') center; background-size: cover;}
+#img4 {background: url('../images/main/sub_box/img4.PNG') center; background-size: cover;}

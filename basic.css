@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*********** basic_layout ***********/
+.hide {position: absolute; overflow: hidden; width: 1px; height: 1px; margin: -1px; clip: rect(0,0,0,0); font-size: 1px;}
+caption {position: static; overflow: hidden; width: 1px; height: 1px; margin: 0; padding: 0; font-size: 1px; text-indent: -9999px;}
+.clearfix:after {content: ""; display: block; width: 0; height: 0; font-size: 0; clear: both;}
+
+.right {float:right;}
+.left {float:left;}
+.none {display: none !important;}
+.on_iblock {display: inline-block !important;}
+.on_block {display: block !important;}
+.fw_500 {font-weight: 500;} /* 주 사용 폰트의 font-face 에 맞춰 사용 */
+.fw_700 {font-weight: 700;}
+.ta_l {text-align: left !important;}
+.ta_c {text-align: center !important;}
+.ta_r {text-align: right !important;}
+.bg {background-color: #696969;}
+
+.mt_10 {margin-top: 10px;}
+.mt_15 {margin-top: 15px;}
+.mt_20 {margin-top: 20px;}
+.mt_25 {margin-top: 25px;}
+.mt_30 {margin-top: 30px;}
+.mt_40 {margin-top: 40px;}
+
+.mb_10 {margin-bottom: 10px;}
+.mb_15 {margin-bottom: 15px;}
+.mb_20 {margin-bottom: 20px;}
+.mb_25 {margin-bottom: 25px;}
+.mb_30 {margin-bottom: 30px;}
+.mb_40 {margin-bottom: 40px;}
+
+.mr_3 {margin-right:3px;}
+.mr_5 {margin-right:5px;}
+.mr_10 {margin-right: 10px;}
+.mr_15 {margin-right: 15px;}
+.mr_20 {margin-right: 20px;}
+
+.ml_3 {margin-left: 3px;}
+.ml_5 {margin-left: 5px;}
+.ml_10 {margin-left: 10px;}
+.ml_15 {margin-left: 15px;}
+.ml_20 {margin-left: 20px;}
+
+/***********************************************/
+
+/*********** sub_common ***********/
+.sub_each {margin-bottom: 60px;}
+/* .sub_each:last-of-type {margin-bottom: 0;} */
+.sub_each2 {margin-bottom: 40px;}
+/* .sub_each2:last-of-type {margin-bottom: 0;} */
+.sub_each3 {margin-bottom: 20px;}
+/* .sub_each3:last-of-type {margin-bottom: 0;} */
+/* .sub_each > *:last-child {margin-bottom: 0;} */
+.sub_tit {font-size:28px; font-weight: 700;}
+.sub_txt {font-size:16px;}
+
+/* board_write */
+.board_write {text-align: center; padding: 20px 0;}
