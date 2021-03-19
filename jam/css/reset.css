@@ -16,7 +16,7 @@ time, mark, audio, video, button, input, select {
 	margin: 0;
 	padding: 0;
 	border: 0 none;
-	font-family: inherit;
+	font-family: 'Noto Sans KR',Arial, Helvetica, sans-serif;
 	box-sizing: border-box;
 }
 
