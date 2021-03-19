@@ -43,7 +43,7 @@ body {color:#111; font-size: 16px; background-color: #fff;}
 .foot_logo .logo_tit {font-size: 18px; font-weight: 700; padding: 2px 4px; border: 4px solid #fff;}
 
 .f_cont_box {position: relative; display: inline-block; width: calc(100% - 140px);}
-.fnb_box {display: block;}
+.fnb_box {display: block; padding-bottom: 30px;}
 .fnb_menu {position: relative; display: inline-block; padding: 35px 0 10px 0;}
 .fnb_menu > li {float: left; padding-right: 25px;}
 .fnb_menu > li > a {font-size: 14px; color: #fff;}
@@ -51,6 +51,16 @@ body {color:#111; font-size: 16px; background-color: #fff;}
 .fnb_menu > li:nth-child(2)::after {content: ''; position: absolute; top: 40px; left: 39.5%; width: 1px; height: 14px; background-color: #ccc;}
 .fnb_menu > li:nth-child(3)::after {content: ''; position: absolute; top: 40px; left: 60.5%; width: 1px; height: 14px; background-color: #ccc;}
 
+.fb {display: inline-block;}
 .f_cont {position: relative; display: inline-block;}
-.f_cont li {display: inline-block; font-size: 14px; color: #ccc; line-height: 1.8em;}
+.f_cont li {display: inline-block; font-size: 14px; color: #ccc; line-height: 1.8em; padding-right: 7px;}
 .f_cont_box .f-copy {font-size: 14px; color: #ccc; line-height: 1.8em;}
+
+.f_icon {display: inline-block; width: 20px; height: 20px;}
+.yt_icon {background: url('../images/common/facebook.svg') center no-repeat; background-size: cover;}
+.fb_icon {background: url('../images/common/facebook.svg') center no-repeat; background-size: cover;}
+.ins_icon {background: url('../images/common/instagram.svg') center no-repeat; background-size: cover;}
+.tt_icon {background: url('../images/common/instagram.svg') center no-repeat; background-size: cover;}
+
+
+
