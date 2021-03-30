@@ -3,8 +3,9 @@
 /************ main ***********/
 
 /* mv */
-.mv {display: inline-block; width: 100%; padding: 30px 0;}
-.mv iframe {display: inline-block;}
+.sub_mv {display: block; padding-top: 35px;}
+.mv {position: relative; display: inline-block;}
+.mv li {display: inline-block; padding: 0 5px 10px 5px;}
 
 /* msCard */
 .board_write .msCard {overflow: hidden; position: relative; width:47%; height: 580px; box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.5); border-radius: 6px; margin: 0 auto; padding-top: 20px;}
@@ -33,6 +34,9 @@
 .fa-play {display: none;}
 
 /* sub_box */
+.sub_box:first-child {padding: 10px 10px 10px 0;}
+.sub_sns::after {content: ''; position: absolute; display: block; width:100px; height: 100px; top: 20px; left: 20px; right: 20px; bottom: 20px; background-color: #fff;}
+
 .subImg {display: inline-block; width: 100%; height: 100%;} 
 #img1 {background: url('../images/main/sub_box/img1.jpg') center; background-size: cover;}
 #img2 {background: url('../images/main/sub_box/img2.jpg') center; background-size: cover;}

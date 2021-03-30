@@ -8,7 +8,7 @@
     .header {min-width: 0;}
 
     /* footer */
-    .footer {min-width: 0; padding-left: ;}
+    .footer {min-width: 0;}
 }
 @media (max-width:991px){
 
