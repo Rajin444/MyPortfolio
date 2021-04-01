@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.intr_box {display: block;}
+.intr_box img {width: 50%; height: auto;}
+.intr {display: inline-block; padding: 0 10px; vertical-align: top;}
+.intr p {font-size: 16px; text-align: left;}
