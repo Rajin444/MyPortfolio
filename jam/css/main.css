@@ -3,22 +3,21 @@
 /************ main ***********/
 
 /* mv */
-.sub_mv {display: block; padding-top: 35px;}
 .mv {position: relative; display: inline-block;}
 .mv li {display: inline-block; padding: 0 5px 10px 5px;}
 
 /* msCard */
-.board_write .msCard {overflow: hidden; position: relative; width:47%; height: 580px; box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.5); border-radius: 6px; margin: 0 auto; padding-top: 20px;}
+.board_write .msCard {overflow: hidden; position: relative; width:600px; height: 630px; box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.5); border-radius: 6px; margin: 0 auto; padding-top: 40px;}
 .msCard .msImg {display: inline-block; width:90%; height:450px; opacity: 0.9; background: url('../images/main/echg.PNG') center no-repeat;}
-.msCard .msImg::after {content: ''; z-index: 1; width: 82.5%; height: 100px; position: absolute; top: 370px; right: 55px; background: linear-gradient(rgba(9,2,4,0),#2e2a2a);}
+.msCard .msImg::after {content: ''; z-index: 1; width: 82.5%; height: 100px; position: absolute; right: 53px; bottom: 150px; background: linear-gradient(rgba(9,2,4,0),#2e2a2a);}
 
 /* msWave */
-.msWave {position: absolute; width: 700px; height: 700px; margin-top: -32%; opacity: 0.1; left: -10%; top: 0; background: radial-gradient(#47517e, #303466);}
+.msWave {position: absolute; width: 750px; height: 720px; margin-top: -32%; opacity: 0.1; left: -10%; top: 0; background: radial-gradient(#47517e, #303466);}
 .msWave:nth-child(2), .msWave:nth-child(3) {top: 10px;} 
 
 .playing .msWave {border-radius: 43%; animation: wave 3000ms infinite linear;}
 
-.msInfo {display: inline-block;}
+.msInfo {display: inline-block; padding: 20px 0;}
 .msInfo .ms_tit {font-size: 20px; font-weight: 700; padding: 10px 0;}
 .msInfo .ms_art {font-size: 16px;}
 
@@ -34,8 +33,12 @@
 .fa-play {display: none;}
 
 /* sub_box */
+.sub_box {display: block; padding-top: 30px;}
 .sub_box:first-child {padding: 10px 10px 10px 0;}
-.sub_sns::after {content: ''; position: absolute; display: block; width:100px; height: 100px; top: 20px; left: 20px; right: 20px; bottom: 20px; background-color: #fff;}
+/* .sub_sns::after {content: ''; position: absolute; left: 4%; bottom: 2.4%; display: block; width:245px; height: 245px; background-color: rgba(225,225,225,0.5);} */
+.sub_sns {display:inline-block; width:315px; height:310px; padding: 0 10px;}
+.sub_sns:first-child {padding: 0 10px 0 0;}
+.sub_sns:last-child {padding: 0 0 0 10px;}
 
 .subImg {display: inline-block; width: 100%; height: 100%;} 
 #img1 {background: url('../images/main/sub_box/img1.jpg') center; background-size: cover;}

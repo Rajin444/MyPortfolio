@@ -57,4 +57,4 @@ caption {position: static; overflow: hidden; width: 1px; height: 1px; margin: 0;
 .sub_txt {font-size:16px;}
 
 /* board_write */
-.board_write {text-align: center; padding: 20px 0;}
+.board_write {display: block; text-align: center; padding-top: 35px;}
