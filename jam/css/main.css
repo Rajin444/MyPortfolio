@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 /************ main ***********/
+/* slick-box */
+.main-box {display: inline-block; overflow: hidden; width: 950px; height: 530px; margin: 0 auto;}
+.mSlider {display: inline-block; width: 100%; height: 530px; background-color: #fff;}
+.mSlider img{width: 950px; height: 530px;}
+
 
 /* mv */
 .mv {position: relative; display: inline-block;}

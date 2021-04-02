@@ -21,19 +21,19 @@
         <link rel="stylesheet" type="text/css" href="../css/common.css">
 
         <!-- sub css -->
+        <link rel="stylesheet" type="text/css" href="../css/slick.css">
+        <link rel="stylesheet" type="text/css" href="../css/slick-theme.css">
         <link rel="stylesheet" type="text/css" href="../css/main.css">
 
         <!-- common js -->
         <link type="text/javascript" href="../js/jquery-3.5.1/jquery.min.js">
+        <link type="text/javascript" href="../js/slick.min.js">
+        
     </head>
     <body>
         <div class="wrapper">
             <!-- header -->
             <div class="header">
-
-
-
-
                 <!-- skip_navi -->
                 <div class="skip_navi">
                 </div>
@@ -70,9 +70,9 @@
                         <li class="on">
                             <a href="../html/intro.html">Intro</a>
                             <ul class="gnb_sub on">
-                                <li><a href="#">subMenu1</a></li>
-                                <li><a href="#">subMenu2</a></li>
-                                <li><a href="#">subMenu3</a></li>
+                                <li><a href="#">소개</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">오시는길</a></li>
                                 <li><a href="#">subMenu4</a></li>
                             </ul>
                         </li>
@@ -131,7 +131,20 @@
                 <div class="container clearfix">
                     <div class="sub_each">
                         <div class="main">
-                            <img src="../images/main/min.jpg" alt="main" title="이처그">
+                            <div class="main-box slick-slider">
+                                <div class="mSlider">
+                                    <img class="slider-image" src="../images/main/music.jpg">
+                                </div>
+                                <div class="mSlider">
+                                    <img class="slider-image" src="../images/main/sbs.jpg">
+                                </div>
+                                <div class="mSlider">
+                                    <img class="slider-image" src="../images/main/all_jam.JPG">
+                                </div>
+                                <div class="mSlider">
+                                    <img class="slider-image" src="../images/main/all_jam.JPG">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -289,5 +302,17 @@
             </div>
             <!-- // footer -->
         </div>
+
+        <!-- Javascript -->
+        <script type="text/javascript">
+            $('.main-box').slick({
+                slideToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplayspeed: 2000,
+                nextArrow:$('.next'),
+                prevArrow:$('.prev'),
+            });
+        </script>
     </body>
 </html>
